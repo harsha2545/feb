@@ -1,27 +1,27 @@
 pipeline {
 	agent any
 	stages {
-		stage ('BUILD') {
+		stage('BUILD') {
 			steps {
 				sh echo 'running BUILD phase'
 				}
 		}
-		stage ('TEST') {
+		stage('TEST') {
 			steps {
 				sh echo 'running TEST phase'
 				}
 		}
-		stage ('QA') {
+		stage('QA') {
 			steps {
 				sh echo "running QA phase"
 				}
 		}
-		stage ('DEPLOY') {
+		stage('DEPLOY') {
 			steps {
 				sh echo "running DEPLOY phase"
 				}
 		}
-		stage ('MONITOR') {
+		stage('MONITOR') {
 			steps {
 				sh echo "running MONITOR phase"
 				}
