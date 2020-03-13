@@ -1,5 +1,5 @@
 pipeline {
-	agentany {
+	agentany
 	stages {
 		stage ('BUILD') {
 			echo"BUILD"
@@ -17,5 +17,5 @@ pipeline {
 			echo"MONITOR"
 		}
 	}
-	}
+	
 }
