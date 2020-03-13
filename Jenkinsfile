@@ -1,30 +1,30 @@
 pipeline {
-    agent any 
-    stages {
-        stage('BUILD') { 
-            steps {
-				sh echo 'running BUILD phase'
-            }
-        }
-        stage('TEST') { 
-            steps {
-                sh echo 'running TEST phase'
-            }
-        }
-        stage('QA') { 
-            steps {
-                sh echo 'running QA phase' 
-            }
-        }
-		 stage('Deploy') { 
-            steps {
-                sh echo 'running DEPLOY phase' 
-            }
-        }
-		 stage('MONITOR') { 
-            steps {
-                sh echo 'running MONITOR phase' 
-            }
-        }
-    }
+	agent any
+	stages {
+		stage('build') {
+			steps {
+				sh echo 'build'
+			}
+		}
+		stage('test') {
+			steps {
+				sh echo 'test'
+			}
+		}
+		stage('QA') {
+			steps {
+				sh echo 'QA'
+			}
+		}
+		stage('DEPLOY') {
+			steps {
+				sh echo 'deploy'
+			}
+		}
+		stage('MONITOR') {
+			steps {
+				sh echo 'monitor'
+			}
+		}
+	}
 }
