@@ -3,12 +3,12 @@ pipeline {
 	stages {
 		stage('BUILD') {
 			steps {
-				sh 'echo 'running BUILD phase''
+				sh 'echo "running BUILD phase"'
 				}
 		}
 		stage('TEST') {
 			steps {
-				sh 'echo 'running TEST phase''
+				sh 'echo "running TEST phase"'
 				}
 		}
 		stage('QA') {
