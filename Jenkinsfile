@@ -2,20 +2,29 @@ pipeline {
 	agentany
 	stages {
 		stage ('BUILD') {
-			echo"BUILD"
+				steps {
+					echo"running BUILD phase"
+				}
 		}
 		stage ('TEST') {
-			echo"TEST"
+				steps {
+					echo"running TEST phase"
+				}
 		}
 		stage ('QA') {
-			echo"QA"
+				steps {
+					echo"running QA phase"
+				}
 		}
 		stage ('DEPLOY') {
-			echo"DEPLOY"
+				steps {
+					echo"running DEPLOY phase"
+				}
 		}
 		stage ('MONITOR') {
-			echo"MONITOR"
+				steps {
+					echo"running MONITOR phase"
+				}
 		}
 	}
-	
 }
