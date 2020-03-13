@@ -3,27 +3,27 @@ pipeline {
 	stages {
 		stage('build') {
 			steps {
-				sh echo 'build'
+				sh 'echo "build"'
 			}
 		}
 		stage('test') {
 			steps {
-				sh echo 'test'
+				sh 'echo "test"'
 			}
 		}
 		stage('QA') {
 			steps {
-				sh echo 'QA'
+				sh 'echo "QA"'
 			}
 		}
 		stage('DEPLOY') {
 			steps {
-				sh echo 'deploy'
+				sh 'echo "deploy"'
 			}
 		}
 		stage('MONITOR') {
 			steps {
-				sh echo 'monitor'
+				sh 'echo "monitor"'
 			}
 		}
 	}
